@@ -1,4 +1,5 @@
-# Aisair Lc3tools
+# homebrew-lc3tools
+A tap for lc3tools
 
 ## How do I install these formulae?
 
