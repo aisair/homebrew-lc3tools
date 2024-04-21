@@ -6,10 +6,9 @@ class Lc3tools < Formula
   license "GPL-2.0-only"
 
   def install
-    system "./configure", "--installdir", "#{prefix}/bin", *std_configure_args
-    # system "./configure", *std_configure_args, "--installdir", prefix
-    # system "make"
+    system "./configure", "--installdir", prefix, *std_configure_args
     system "make", "install"
+    bin.install "lc3as", "lc3convert", "lc3sim", "lc3sim-tk"
   end
 
   test do
